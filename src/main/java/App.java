@@ -10,9 +10,9 @@ import java.util.Random;
 public class App {
     public static void main(String [] args){
         Connection conn = null;
-        String DBurl = "jdbc:mysql://rds-mysql-4job.cph0mepwrt4r.us-east-2.rds.amazonaws.com"; //Change for your specific DB address
-        String DBuser = "SQLadmin"; //Change for your specific DB's username
-        String DBpass = "aws_4job"; //Change for your specific DB's password
+        String DBurl = "jdbc:mysql://mysql_db_address"; //Change for your specific DB address
+        String DBuser = "user"; //Change for your specific DB's username. This should never be the root user
+        String DBpass = "password"; //Change for your specific DB's password
         try {
             conn = DriverManager.getConnection(DBurl, DBuser, DBpass);
         } catch (SQLException ex) {// handle any errors
